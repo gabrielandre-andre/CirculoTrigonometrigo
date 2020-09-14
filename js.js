@@ -52,18 +52,43 @@ function clickconfirm(){
 
             display.inputText.valueConverted = parseInt(display.inputText.value)
 
+            display.inputText.valueConvertedRadius = display.inputText.valueConverted * Math.PI/180
+
 
             if(content.checkradio == 1){
 
                 //CÓDIGO DO SENO
 
+                if(display.inputText.valueConverted <= 90){
+                    content.valueContent = Math.sin(display.inputText.valueConvertedRadius)
+                    display.debugConsole.innerHTML = "<p> O SENO DE "+display.inputText.valueConverted+" É: <b>"+Math.round(content.valueContent * 1000)/1000+"</b></p>"
+
+                }else{
+
+                }
+
             }else if(content.checkradio == 2){
 
                 //CÓDIGO DO COSSENO
+
+                if(display.inputText.valueConverted <= 90){
+                    content.valueContent = Math.cos(display.inputText.valueConvertedRadius)
+                    display.debugConsole.innerHTML = "<p> O COSSENO DE "+display.inputText.valueConverted+" É:<b> "+Math.round(content.valueContent * 1000)/1000+"</b></p>"
+                }else{
+
+                }
                 
             }else if(content.checkradio == 3){
 
                 //CÓDIGO DA TANGENTE
+
+                if(display.inputText.valueConverted <= 90){
+                    content.valueContent = Math.tan(display.inputText.valueConvertedRadius)
+                    display.debugConsole.innerHTML = "<p> A TANGENTE DE "+display.inputText.valueConverted+" É:<b> "+Math.round(content.valueContent * 1000)/1000+"</b></p>"
+
+                }else{
+
+                }
                 
             }else if(content.checkradio == undefined){
 
