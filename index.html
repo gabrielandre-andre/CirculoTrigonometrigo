@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora - Círculo Trigonométrico</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+    <section id="section">
+        <div id="content">
+
+            <p>Qual o valor do Ângulo?</p>
+
+            <input type="text" id="angValue">
+
+            <div class="radio-select">
+                <input type="radio" id="seno" name="option" value="SEN"> SEN.
+                <input type="radio" id="cosseno" name="option" value="COSS"> COSS.
+                <input type="radio" id="tangente" name="option" value="TAN"> TANG.
+            </div>
+        
+        </div>
+
+        <div id="content-data">
+
+            <p>SENO = * | COSSENO =  * | TANGENTE = *</p>
+        
+        </div>
+
+        <div id="inputConfirm"><input type="button" value="CONFIRMAR" onclick="clickconfirm()"></div>
+    </section>
     
+
+    <script src="js.js"></script>
 </body>
 </html>
