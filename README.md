@@ -17,5 +17,7 @@ Tomando por base os seguintes conceitos:
 #### Sinais:
 
 > Seno: Setor 1: + | Setor 2: + | Setor 3: - | Setor 4: -
+#
 > Cosseno: Setor 1: + | Setor 2: - | Setor 3: - | Setor 4: +
+#
 > Tangente: Setor 1: + | Setor 2: - | Setor 3: + | Setor 4: -
