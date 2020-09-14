@@ -136,3 +136,24 @@ body{
     color: #9389BC;
     display: inline-block;
 }
+
+
+@keyframes balancoDisplayDebug{
+
+    0%{
+        transform: translateX(0px)
+    }
+
+    25%{
+        transform: translateX(5px)
+    }
+
+    50%{
+        transform: translateX(-5px)
+    }
+
+    100%{
+        transform: translateX(0px)
+    }
+
+}
