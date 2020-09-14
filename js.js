@@ -10,6 +10,8 @@ function clickconfirm(){
 
     if(display.inputText.value == ''){
 
+        display.debugConsole.style.display = 'block'
+
         display.debugConsole.style.animationName = "balancoDisplayDebug"
 
         display.debugConsole.style.animationDuration = "0.5s"
@@ -26,6 +28,8 @@ function clickconfirm(){
 
 
         if(display.inputText.value == 'ok'){
+
+            display.debugConsole.style.display = 'block'
 
             display.debugConsole.style.animationName = "balancoDisplayDebug"
 
@@ -54,6 +58,7 @@ function clickconfirm(){
 
             display.inputText.valueConvertedRadius = display.inputText.valueConverted * Math.PI/180
 
+            display.debugConsole.style.display = 'block'
 
             if(content.checkradio == 1){
 
@@ -92,6 +97,9 @@ function clickconfirm(){
                 
             }else if(content.checkradio == undefined){
 
+                display.debugConsole.style.display = 'block'
+
+
                 display.debugConsole.style.animationName = "balancoDisplayDebug"
 
                 display.debugConsole.style.animationDuration = "0.5s"
@@ -106,6 +114,9 @@ function clickconfirm(){
             
                 
             }else{
+                
+                display.debugConsole.style.display = 'block'
+
 
                 display.debugConsole.style.animationName = "balancoDisplayDebug"
 
