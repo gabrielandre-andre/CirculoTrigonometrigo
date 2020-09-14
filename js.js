@@ -69,7 +69,8 @@ function clickconfirm(){
                     display.debugConsole.innerHTML = "<p> O SENO DE "+display.inputText.valueConverted+" É: <b>"+Math.round(content.valueContent * 1000)/1000+"</b></p>"
 
                 }else{
-
+                    content.valueContent = Math.sin(display.inputText.valueConvertedRadius)
+                    display.debugConsole.innerHTML = "<p> O SENO DE "+display.inputText.valueConverted+" É: <b>"+Math.round(content.valueContent * 1000)/1000+"</b></p> <p>O valor em RADIUS é: "+display.inputText.valueConvertedRadius+"</p>"
                 }
 
             }else if(content.checkradio == 2){
@@ -80,6 +81,8 @@ function clickconfirm(){
                     content.valueContent = Math.cos(display.inputText.valueConvertedRadius)
                     display.debugConsole.innerHTML = "<p> O COSSENO DE "+display.inputText.valueConverted+" É:<b> "+Math.round(content.valueContent * 1000)/1000+"</b></p>"
                 }else{
+                    content.valueContent = Math.cos(display.inputText.valueConvertedRadius)
+                    display.debugConsole.innerHTML = "<p> O COSSENO DE "+display.inputText.valueConverted+" É: <b>"+Math.round(content.valueContent * 1000)/1000+"</b></p> <p>O valor em RADIUS é: "+display.inputText.valueConvertedRadius+"</p>"
 
                 }
                 
@@ -92,6 +95,10 @@ function clickconfirm(){
                     display.debugConsole.innerHTML = "<p> A TANGENTE DE "+display.inputText.valueConverted+" É:<b> "+Math.round(content.valueContent * 1000)/1000+"</b></p>"
 
                 }else{
+
+                    content.valueContent = Math.sin(display.inputText.valueConvertedRadius)
+                    display.debugConsole.innerHTML = "<p> A TANGENTE DE "+display.inputText.valueConverted+" É: <b>"+Math.round(content.valueContent * 1000)/1000+"</b></p> <p>O valor em RADIUS é: "+display.inputText.valueConvertedRadius+"</p>"
+
 
                 }
                 
