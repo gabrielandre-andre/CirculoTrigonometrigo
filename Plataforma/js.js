@@ -109,16 +109,44 @@ setInterval(function(){
 },100)
 
 
-for(var i = 0; i <= 10; i++){
-
-    if(valor_cookie(i) == 1){
-
-        content.checkVideo.checked = true
-
-        $('#aula-0'+i).addClass('conclued-aula');
 
 
+
+
+
+
+
+
+
+
+
+
+
+addClass(19)
+
+
+function addClass(naulas){
+
+    var menuMenu = document.getElementById('menu-menu')
+
+    for(var j = 1; j <= naulas; j++){
+
+        menuMenu.innerHTML += '<div id="aula-'+j+'" class=""><i class="material-icons md-18">check</i> AULA '+j+'</div>'
     }
+
+
+    for(var i = 0; i <= 19; i++){
+
+        if(valor_cookie(i) == 1){
+
+            content.checkVideo.checked = true
+
+            $('#aula-'+i).addClass('conclued-aula');
+            
+
+        }
+    }
+
 }
 
 
@@ -132,25 +160,7 @@ for(var i = 0; i <= 10; i++){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-videoSelect(content.videoId,10)
+videoSelect(content.videoId,20)
 
 
 
@@ -214,6 +224,72 @@ function videoSelect(videoId,maxId){
 
 
         content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/xQt7g-KAPfg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 10){
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/nw8EFLWenUo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+    }else if(videoId == 11){
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/hwsaU_105wg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 12){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="500" src="https://www.youtube.com/embed/gcg6tiRk4hc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+    }else if(videoId == 13){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="500" src="https://www.youtube.com/embed/nOq6U00SeGQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 14){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="500" src="https://www.youtube.com/embed/MoHs7JlgtGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 15){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="500" src="https://www.youtube.com/embed/jobAedVj220" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 16){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="500" src="https://www.youtube.com/embed/lC-k50pTthg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 17){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/dbW3N4_hIgE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 18){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/8P8nfmOOOas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 19){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/JLb96WsuJrk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
 
 
