@@ -9,6 +9,7 @@ content.checkVideo = document.getElementById('checkVideoWatch')
 content.videoContent = document.getElementById('video')
 
 
+
 var url   = window.location.search.replace("?", "");
 var items = url.split("&");
 
@@ -25,6 +26,9 @@ if(content.videoId <= 0){
     window.location = '?video-id=1'
 }else if(content.videoId == 1){
     content.buttonback.style.backgroundColor = 'grey'
+}else if(array["video-id"] == ''){
+    content.buttonback.style.backgroundColor = 'grey'
+    window.location = '?video-id=1'
 }
 
 
@@ -96,9 +100,9 @@ function valor_cookie(nome_cookie) {
 setInterval(function(){
 
     if(content.checkVideo.checked == true){
-        document.cookie = content.videoId+'=1'
-    }if(content.checkVideo.checked != true){
-        document.cookie = content.videoId+'=2'
+        document.cookie = content.videoId+'= 1 '
+    }if(content.checkVideo.checked == false){
+        document.cookie = content.videoId+'= 2 '
     }
 
 
@@ -106,9 +110,13 @@ setInterval(function(){
 
 
 for(var i = 0; i <= 10; i++){
+
     if(valor_cookie(i) == 1){
 
-        
+        content.checkVideo.checked = true
+
+        $('#aula-0'+i).addClass('conclued-aula');
+
 
     }
 }
@@ -140,7 +148,9 @@ for(var i = 0; i <= 10; i++){
 
 
 
-videoSelect(content.videoId,3)
+
+
+videoSelect(content.videoId,10)
 
 
 
@@ -156,6 +166,55 @@ function videoSelect(videoId,maxId){
 
 
         content.videoContent.innerHTML = "<iframe src='https://www.youtube.com/embed/sVnfv3-SeuU' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+
+    }else if(videoId == 3){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/77xJJaZsMxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 4){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/OVsNLlTqZqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 5){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/xNQrnrRTTao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 6){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/uqhKnaI0XA8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 7){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/8LNwNoWmhjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 8){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="500" src="https://www.youtube.com/embed/sel28nYNqYI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+
+
+    }else if(videoId == 9){
+
+
+        content.videoContent.innerHTML = '<iframe width="889" height="652" src="https://www.youtube.com/embed/xQt7g-KAPfg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
 
 
     }
