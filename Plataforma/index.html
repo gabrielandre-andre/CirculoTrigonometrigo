@@ -29,18 +29,18 @@
 
         <div class="content">
 
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/CrSC1ZA9j0M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video" id="video">
+                
                 
             </div>
 
-            <div class="verify-video">
+            <div class="verify-video" id="verify-video">
 
-                <input type="button" value="<< AULA ANTERIOR" id="backvideo">
+                <input type="button" value="<< AULA ANTERIOR" id="backvideo" onclick="backvideo()">
 
-                <input type="checkbox" id=""> MARCAR COMO CONCLUÍDA
+                <input type="checkbox" id="checkVideoWatch"> MARCAR COMO CONCLUÍDA
 
-                <input type="button" value="PRÓXIMA AULA >>" id="latervideo">
+                <input type="button" value="PRÓXIMA AULA >>" id="latervideo" onclick="latervideo()">
             </div>
         
         </div>
