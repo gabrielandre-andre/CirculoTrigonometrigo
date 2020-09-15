@@ -158,14 +158,14 @@ function videoSelect(videoId,maxId){
 
     if(videoId == 1){
 
-        content.videoContent.innerHTML = "<iframe src='https://www.youtube.com/embed/CrSC1ZA9j0M' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+        content.videoContent.innerHTML = '<iframe width="1016" height="746" src="https://www.youtube.com/embed/WrNjatlYNH0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
 
 
     }else if(videoId == 2){
 
 
-        content.videoContent.innerHTML = "<iframe src='https://www.youtube.com/embed/sVnfv3-SeuU' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+        content.videoContent.innerHTML = '<iframe width="1016" height="746" src="https://www.youtube.com/embed/DILglksusY0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
 
     }else if(videoId == 3){
